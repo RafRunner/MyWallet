@@ -6,9 +6,9 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.snackbar.R
 import kotlinx.android.synthetic.main.activity_profile.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -19,12 +19,10 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        setSupportActionBar(profileToolbar)
         navController = findNavController(R.id.navHostfragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
-
-        btnAjuda.setOnClickListener {
-            navController.navigate(R.id.action_fragmentProfile_to_ajudaFragment)
-        }
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {

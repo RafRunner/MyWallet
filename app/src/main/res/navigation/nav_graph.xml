@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_ajuda" />
     <fragment
         android:id="@+id/fragmentProfile"
-        android:name="com.example.snackbar.ui.FragmentProfile"
+        android:name="com.example.snackbar.ui.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
