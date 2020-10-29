@@ -17,4 +17,12 @@
         app:title="@string/app_name"
         app:titleTextColor="@color/colorWhite" />
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navHostfragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"/>
+
 </LinearLayout>

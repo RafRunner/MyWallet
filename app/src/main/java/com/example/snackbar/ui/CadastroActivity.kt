@@ -33,7 +33,7 @@ class CadastroActivity : AppCompatActivity() {
 
     //Chama MainActivity
     fun callMain(usuario: Usuario){
-        var intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("key", usuario)
         startActivity(intent)
     }
