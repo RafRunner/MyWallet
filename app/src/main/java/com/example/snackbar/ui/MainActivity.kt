@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
             callFragGastos()
         }
 
-        var usuario = intent.getSerializableExtra("key") as? Usuario
+        val usuario = intent.getSerializableExtra("key") as? Usuario
         showToast("Bem Vindo ${usuario!!.userName}")
         Log.i(TAG, usuario.toString())
 
@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
 
     //Inicia a activity de profile
     fun callProfileActivity(){
-        var intent = Intent(this, ProfileActivity::class.java)
+        val intent = Intent(this, ProfileActivity::class.java)
         intent.putExtra("bundle", Bundle().apply {
             putString("nome", "Carlos Adão")
             putDouble("peso", 68.0)

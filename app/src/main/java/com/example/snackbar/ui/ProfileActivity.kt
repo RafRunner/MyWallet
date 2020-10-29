@@ -20,8 +20,10 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         setSupportActionBar(profileToolbar)
+
         navController = findNavController(R.id.navHostfragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
+
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
 

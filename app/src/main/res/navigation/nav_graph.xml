@@ -8,12 +8,12 @@
     <fragment
         android:id="@+id/ajudaFragment"
         android:name="com.example.snackbar.ui.AjudaFragment"
-        android:label="fragment_ajuda"
+        android:label="@string/legAjuda"
         tools:layout="@layout/fragment_ajuda" />
     <fragment
         android:id="@+id/fragmentProfile"
         android:name="com.example.snackbar.ui.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="@string/legProfile"
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_fragmentProfile_to_ajudaFragment"
