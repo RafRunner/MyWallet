@@ -83,9 +83,9 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
     }
 
     fun alterColorHome(idCor: Int) {
-        llLinhaTabHome.setBackgroundColor(ContextCompat.getColor(this, idCor));
-        tvTabHome.setTextColor(ContextCompat.getColor(this, idCor));
-        icTabHome.setColorFilter(ContextCompat.getColor(this, idCor));
+        llLinhaTabHome.setBackgroundColor(ContextCompat.getColor(this, idCor))
+        tvTabHome.setTextColor(ContextCompat.getColor(this, idCor))
+        icTabHome.setColorFilter(ContextCompat.getColor(this, idCor))
     }
 
     //Coloca o fragment Home na pilha
@@ -98,9 +98,9 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
     }
 
     fun alterColorEntrada(idCor: Int) {
-        llLinhaTabEntrada.setBackgroundColor(ContextCompat.getColor(this, idCor));
-        tvTabEntrada.setTextColor(ContextCompat.getColor(this, idCor));
-        icTabEntrada.setColorFilter(ContextCompat.getColor(this, idCor));
+        llLinhaTabEntrada.setBackgroundColor(ContextCompat.getColor(this, idCor))
+        tvTabEntrada.setTextColor(ContextCompat.getColor(this, idCor))
+        icTabEntrada.setColorFilter(ContextCompat.getColor(this, idCor))
     }
 
     //Coloca o fragment Entrada na pilha
@@ -113,9 +113,9 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
     }
 
     fun alterColorGasto(idCor: Int) {
-        llLinhaTabGasto.setBackgroundColor(ContextCompat.getColor(this, idCor));
-        tvTabGasto.setTextColor(ContextCompat.getColor(this, idCor));
-        icTabGasto.setColorFilter(ContextCompat.getColor(this, idCor));
+        llLinhaTabGasto.setBackgroundColor(ContextCompat.getColor(this, idCor))
+        tvTabGasto.setTextColor(ContextCompat.getColor(this, idCor))
+        icTabGasto.setColorFilter(ContextCompat.getColor(this, idCor))
     }
 
     //Coloca o fragment Gastos na pilha
@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity(), ContractMainActivity {
 
     //Coloca o fragment Details Gastos na pilha
     override fun callFragDetailGastos() {
-        val fragDetailGastos = DetailGastosFragment.newInstance(1)
+        val fragDetailGastos = DetailGastosFragment.newInstance("Bem vindo aos gastos!")
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragDetails, fragDetailGastos)
             commit()

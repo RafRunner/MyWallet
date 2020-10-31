@@ -24,6 +24,7 @@
     <string name="legAjuda">Ajuda</string>
     <string name="til_descr">Descrição</string>
     <string name="legCadastrarGastos">Cadastrar</string>
+    <string name="legRemoverGastos">Remover</string>
     <string name="tilCategoria">Categoria</string>
     <string name="tilDataHora">Data e Hora</string>
     <string name="tilValor">Valor</string>
